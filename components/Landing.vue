@@ -119,7 +119,7 @@ export default {
   data() {
     return {
       logo: require('../assets/img/logo.png'),
-      greets: ['Hey Genius 👀', 'Yo!!', 'Hi Lovely'],
+      greets: ['Hey Genius 👀', 'Yo!! 🤘', 'Hi Lovely 😊'],
     }
   },
   computed: {

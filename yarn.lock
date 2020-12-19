@@ -2051,10 +2051,9 @@ ajv@^6.1.0, ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.2, ajv@^6.12.4, ajv@^6.12.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-aki-api@^5.2.0:
+"aki-api@https://github.com/oluwakeye-john/aki-api":
   version "5.2.0"
-  resolved "https://registry.yarnpkg.com/aki-api/-/aki-api-5.2.0.tgz#4a454262dee0ceeb0d11942da3d9a1d4f92af2b3"
-  integrity sha512-eREfxZn9tf8DEczlP2Lvr0P7I8RS3DLPzfz/adsZVACNtvCEc8oKHpT7oBsgiCikN6ltsCG4RUTMzPKHxQ5vDg==
+  resolved "https://github.com/oluwakeye-john/aki-api#47795494d6a1880db7c450551c2768dd524f138f"
   dependencies:
     axios "^0.20.0"
 
