@@ -114,15 +114,16 @@
 </style>
 
 <script>
+import { mapActions, mapState } from 'vuex'
 export default {
   data() {
     return {
       logo: require('../assets/img/logo.png'),
       greets: ['Hey Genius 👀', 'Yo!!', 'Hi Lovely'],
-      started: false,
     }
   },
   computed: {
+    ...mapState(['started']),
     greeting() {
       const rand =
         Math.round(Math.random() * this.greets.length) % this.greets.length
@@ -130,8 +131,9 @@ export default {
     },
   },
   methods: {
+    ...mapActions(['setStarted']),
     handleStart() {
-      this.started = true
+      this.setStarted(true)
       setTimeout(() => {
         this.$router.push('play')
       }, 1000)
