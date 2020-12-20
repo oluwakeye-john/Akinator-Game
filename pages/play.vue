@@ -2,7 +2,7 @@
   <Container>
     <div class="justify-center items-center mt-10">
       <div class="bg-white card rounded-lg p-10 text-center">
-        <img :src="logo" class="w-20 mx-auto" />
+        <img :src="logo" class="w-20 mx-auto hidden md:block" />
         <div class="my-6">
           <div v-if="finished">
             <img class="guess-img rounded" :src="guess.absolute_picture_path" />
@@ -15,7 +15,7 @@
                 {{ akinator.currentStep + 1 }}. {{ akinator.question }}
               </p>
             </div>
-            <div class="mt-5">
+            <div class="mt-10 md:mt-5">
               <Button text="Yes" @click="handleAnswer(0)" />
               <Button text="No" @click="handleAnswer(1)" />
               <Button text="Don't know" @click="handleAnswer(2)" />

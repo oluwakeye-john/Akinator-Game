@@ -3,6 +3,10 @@
     <div class="h-screen">
       <Header />
       <Nuxt />
+
+      <div class="fab bg-primary text-gray-100">
+        <span class="fas fa-question"></span>
+      </div>
     </div>
   </transition>
 </template>
@@ -18,6 +22,19 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+.fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 *,

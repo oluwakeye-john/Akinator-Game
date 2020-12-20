@@ -3,7 +3,7 @@
     class="flex flex-col md:flex-row justify-between items-center mt-10 text-center"
   >
     <div class="section mb-10 md:mb-0">
-      <img class="landing-image" :src="logo" />
+      <img class="landing-image hidden md:block" :src="logo" />
     </div>
     <div
       class="text-gray-900 section bg-white py-5 md:py-20 px-5 rounded-lg mb-10 md:mb-0 content"
@@ -114,16 +114,15 @@
 </style>
 
 <script>
-import { mapActions, mapState } from 'vuex'
 export default {
   data() {
     return {
       logo: require('../assets/img/logo.png'),
       greets: ['Hey Genius 👀', 'Yo!! 🤘', 'Hi Lovely 😊'],
+      started: false,
     }
   },
   computed: {
-    ...mapState(['started']),
     greeting() {
       const rand =
         Math.round(Math.random() * this.greets.length) % this.greets.length
@@ -131,9 +130,8 @@ export default {
     },
   },
   methods: {
-    ...mapActions(['setStarted']),
     handleStart() {
-      this.setStarted(true)
+      this.started = true
       setTimeout(() => {
         this.$router.push('play')
       }, 1000)
