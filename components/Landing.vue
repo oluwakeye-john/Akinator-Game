@@ -3,10 +3,10 @@
     class="flex flex-col md:flex-row justify-between items-center mt-10 text-center"
   >
     <div class="section mb-10 md:mb-0 hidden md:block">
-      <img class="landing-image" :src="logo" />
+      <img class="landing-image" :src="logoAlt" />
     </div>
     <div
-      class="text-gray-900 section bg-white py-5 md:py-20 px-5 rounded-lg mb-10 md:mb-0 content"
+      class="text-gray-900 section bg-white py-10 md:py-5 md:py-20 px-5 rounded-lg mb-10 md:mb-0 content"
       :class="{ 'content-leave': started }"
     >
       <img class="landing-image md:hidden block" :src="logo" />
@@ -83,7 +83,7 @@
 }
 
 .section {
-  width: 45%;
+  width: 48%;
 }
 .landing-image {
   width: 75%;
@@ -121,6 +121,7 @@ export default {
   data() {
     return {
       logo: require('../assets/img/logo2.png'),
+      logoAlt: require('../assets/img/logo.png'),
       greets: ['Hey Genius 👀', 'Yo!! 🤘', 'Hi Lovely 😊'],
       started: false,
     }

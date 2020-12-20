@@ -2,8 +2,7 @@
   <Container>
     <div class="justify-center items-center my-10">
       <div class="bg-white card rounded-lg p-10 text-center">
-        <!-- <img :src="logo" class="w-20 mx-auto md:block" /> -->
-        <p class="text-5xl">👽</p>
+        <img :src="logo" class="w-20 mx-auto md:block" />
         <div class="my-6">
           <div v-if="finished">
             <img class="guess-img rounded" :src="guess.absolute_picture_path" />
