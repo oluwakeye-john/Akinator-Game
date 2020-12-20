@@ -13,14 +13,16 @@
       <h1 class="text-4xl md:text-5xl font-bold my-5 text-primary name">
         {{ greeting }}
       </h1>
-      <!-- <p class="my-8">
-        I'm <span class="text-primary">Akinator</span>, your best guessing
-        genie.
-      </p> -->
-      <p class="my-8">
-        Think about a real or fictional character. I will try to guess who it
-        is.
-      </p>
+      <div class="text-sm md:text-md">
+        <p class="my-8">
+          I'm <span class="text-primary">Akinator</span>, your best guessing
+          genie.
+        </p>
+        <p class="my-8">
+          Think about a real or fictional character. I will try to guess who it
+          is.
+        </p>
+      </div>
       <button
         class="bg-primary py-3 px-5 rounded-md transition-all duration-300 ease-in-out transform hover:-translate-y-1"
         @click="handleStart"
