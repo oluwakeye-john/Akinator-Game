@@ -1,6 +1,6 @@
 <template>
   <transition enter-active-class="enter" leave-active-class="leave">
-    <div class="h-screen">
+    <div>
       <Header />
       <Nuxt />
 

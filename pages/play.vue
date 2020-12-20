@@ -1,6 +1,6 @@
 <template>
   <Container>
-    <div class="justify-center items-center mt-10">
+    <div class="justify-center items-center my-10">
       <div class="bg-white card rounded-lg p-10 text-center">
         <img :src="logo" class="w-20 mx-auto md:block" />
         <div class="my-6">
@@ -75,7 +75,8 @@ export default Vue.extend({
 }
 .card {
   width: 50%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 768px) {
   .card {

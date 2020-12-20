@@ -2,8 +2,8 @@
   <div
     class="flex flex-col md:flex-row justify-between items-center mt-10 text-center"
   >
-    <div class="section mb-10 md:mb-0">
-      <img class="landing-image hidden md:block" :src="logo" />
+    <div class="section mb-10 md:mb-0 hidden md:block">
+      <img class="landing-image" :src="logo" />
     </div>
     <div
       class="text-gray-900 section bg-white py-5 md:py-20 px-5 rounded-lg mb-10 md:mb-0 content"
@@ -13,10 +13,10 @@
       <h1 class="text-4xl md:text-5xl font-bold my-5 text-primary name">
         {{ greeting }}
       </h1>
-      <p class="my-8">
+      <!-- <p class="my-8">
         I'm <span class="text-primary">Akinator</span>, your best guessing
         genie.
-      </p>
+      </p> -->
       <p class="my-8">
         Think about a real or fictional character. I will try to guess who it
         is.
