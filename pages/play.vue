@@ -58,6 +58,17 @@ export default Vue.extend({
   created() {
     this.begin()
   },
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  beforeRouteLeave(to, from, next) {
+    const answer = window.confirm(
+      "Do you really want to leave? you haven't finished your game!"
+    )
+    if (answer) {
+      next()
+    } else {
+      next(false)
+    }
+  },
   methods: {
     async begin() {
       try {
