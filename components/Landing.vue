@@ -9,6 +9,7 @@
       class="text-gray-900 section bg-white py-5 md:py-20 px-5 rounded-lg mb-10 md:mb-0 content"
       :class="{ 'content-leave': started }"
     >
+      <img class="landing-image md:hidden block" :src="logo" />
       <h1 class="text-4xl md:text-5xl font-bold my-5 text-primary name">
         {{ greeting }}
       </h1>
@@ -80,7 +81,7 @@
 }
 
 .section {
-  width: 49%;
+  width: 45%;
 }
 .landing-image {
   width: 75%;
@@ -117,7 +118,7 @@
 export default {
   data() {
     return {
-      logo: require('../assets/img/logo.png'),
+      logo: require('../assets/img/logo2.png'),
       greets: ['Hey Genius 👀', 'Yo!! 🤘', 'Hi Lovely 😊'],
       started: false,
     }

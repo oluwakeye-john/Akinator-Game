@@ -2,7 +2,7 @@
   <Container>
     <div class="justify-center items-center mt-10">
       <div class="bg-white card rounded-lg p-10 text-center">
-        <img :src="logo" class="w-20 mx-auto hidden md:block" />
+        <img :src="logo" class="w-20 mx-auto md:block" />
         <div class="my-6">
           <div v-if="finished">
             <img class="guess-img rounded" :src="guess.absolute_picture_path" />
@@ -38,7 +38,7 @@ import akinator from '../api/index'
 export default Vue.extend({
   data() {
     return {
-      logo: require('../assets/img/logo.png'),
+      logo: require('../assets/img/logo2.png'),
       akinator: { progress: 0 },
       fetching: false,
       finished: false,
